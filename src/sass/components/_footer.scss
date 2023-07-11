@@ -1,0 +1,312 @@
+.footer {
+  padding: 20px 0 35px;
+  background-color: $blk-clr;
+}
+
+.footer__logo {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+
+  border-bottom: 1px solid $wht-clr;
+
+  &--white {
+    color: $wht-clr;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 700;
+
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+}
+
+.footer__thumb {
+  &:first-child {
+    color: $blk-clr;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  @media screen and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+
+    max-width: 40%;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 96px;
+    }
+  }
+}
+
+.reach-us {
+  width: 47%;
+
+  @media screen and (min-width: 1280px) {
+    flex: 1;
+  }
+}
+
+.footer__reach-us {
+  @media screen and (min-width: 1280px) {
+    margin-right: 38px;
+  }
+}
+
+.reach-us__list {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 360px;
+}
+
+.reach-us__link {
+  display: inline-block;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+
+  color: $wht-clr;
+
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: #c9c9c9;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+
+    padding-left: 49px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.reach-us__icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+
+  margin-bottom: 12px;
+
+  fill: $wht-clr;
+
+  transition: fill 250ms $cubic-bezier;
+
+  .reach-us__link:hover &,
+  .reach-us__link:focus & {
+    fill: #c9c9c9;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+}
+
+.footer__legal {
+  @media screen and (min-width: 1280px) {
+    margin-right: 60px;
+  }
+}
+
+.reach-us__title,
+.company__title,
+.legal__title,
+.additional-res__title {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+
+  color: $wht-clr;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.reach-us__description {
+  display: inline-block;
+
+  max-width: 150px;
+
+  font-style: normal;
+}
+
+.reach-us__link,
+.company__link,
+.legal__link,
+.additional-res__link {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+
+  color: $wht-clr;
+
+  transition: color 250ms $cubic-bezier;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      color: #a9a8a8;
+    }
+  }
+}
+
+.legal__item,
+.company__item,
+.additional-res__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.subscription {
+  padding: 17px 14px 14px 14px;
+
+  background-color: #0d0d0d;
+
+  border-radius: 5px;
+
+  @media screen and (min-width: 1280px) {
+    display: inline-block;
+
+    height: 185px;
+    max-width: 300px;
+    padding: 14px 14px 20px 14px;
+  }
+}
+
+.footer__subscription {
+  @media screen and (min-width: 1280px) {
+    margin-top: -10px;
+  }
+}
+
+.subscription__title {
+  display: inline-block;
+
+  margin-bottom: 23px;
+
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.63;
+
+  color: $wht-clr;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 29px;
+
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.subscription__form {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.subscription__input {
+  flex-grow: 1;
+
+  padding: 11px 10px;
+
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+
+  color: #616161;
+  background-color: #1a1a1a;
+  border: 0;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 12px 10px 10px 10px;
+  }
+}
+
+.subscription__button {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  min-height: 40px;
+
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+  background-color: $blk-clr;
+  color: $wht-clr;
+  border: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  cursor: pointer;
+}
+
+.subscription__remark {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  line-height: 1.38;
+
+  color: rgba($color: $wht-clr, $alpha: 0.5);
+}

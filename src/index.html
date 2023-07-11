@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__navigation navigation">
+          <a class="navigation__logo logo" href="./index.html">Logo Here</a>
+          <button
+            class="menu-button"
+            type="button"
+            id="button"
+            aria-label="Mobile menu switch"
+            data-menu-button
+          >
+            <svg class="menu-button__icon-menu">
+              <use href="./images/sprite.svg#ic-menu"></use>
+            </svg>
+            <svg class="menu-button__icon-close">
+              <use href="./images/sprite.svg#ic-close"></use>
+            </svg>
+          </button>
+          <div class="navigation__menu" data-menu>
+            <div class="navigation-menu__wrapper">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">Home</a>
+                </li>
+                <li class="navigation__item">
+                  <button class="navigation__features-button">
+                    Features<svg class="navigation__features-icon">
+                      <use href="./images/sprite.svg#ic-thin-down"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">Blog</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">Shop</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">About</a>
+                </li>
+                <li class="navigation__item">
+                  <a
+                    class="navigation__link navigation__link--visited"
+                    href="./index.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="navigation__user-env">
+                <button type="button" class="navigation__button">
+                  <svg class="navigation__icon">
+                    <use href="./images/sprite.svg#ic-profile"></use>
+                  </svg>
+                </button>
+                <button type="button" class="navigation__button">
+                  <svg class="navigation__icon">
+                    <use href="./images/sprite.svg#ic-cart" x="0.8" y="1"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="contacts">
+          <h1 class="contacts__title">Contact Us</h1>
+          <p class="contacts__subtitle">
+            Any question or remarks? Just write us a message!
+          </p>
+          <div class="contacts__wrapper">
+            <div class="contacts__details-wrapper">
+              <div class="details">
+                <h2 class="details__title">Contact Information</h2>
+                <p class="details__subtitle">
+                  Say something to start a live chat!
+                </p>
+                <address class="details__list-geo">
+                  <a class="details__address-link" href="callto:+10123456789"
+                    ><svg class="details__geo-icon">
+                      <use href="./images/sprite.svg#ic-phone"></use>
+                    </svg>
+                    +1012 3456 789</a
+                  >
+
+                  <a class="details__address-link" href="mailto:demo@gmail.com">
+                    <svg class="details__geo-icon">
+                      <use href="./images/sprite.svg#ic-email"></use>
+                    </svg>
+                    demo@gmail.com</a
+                  >
+
+                  <a
+                    class="details__address-link"
+                    href="https://www.google.com.ua/maps/place/132+Dartmouth+St,+Boston,+MA+02116,+%D0%A1%D0%A8%D0%90/@42.3467614,-71.0767619,19z/data=!3m1!4b1!4m6!3m5!1s0x89e37a0d715622b3:0x5b2af19970952585!8m2!3d42.3467604!4d-71.0761182!16s%2Fg%2F11c1zptc6r?hl=ru&entry=ttu"
+                    target="_blank"
+                    ><svg class="details__geo-icon">
+                      <use href="./images/sprite.svg#ic-location"></use>
+                    </svg>
+                    132 Dartmouth Street Boston, Massachusetts 02156 United
+                    States
+                  </a>
+                </address>
+                <ul class="details__list-media">
+                  <li class="details__item-media">
+                    <a class="details__link" href=""
+                      ><svg class="details__icon-media">
+                        <use href="./images/sprite.svg#ic-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="details__item-media">
+                    <a class="details__link" href="">
+                      <svg class="details__icon-media">
+                        <use href="./images/sprite.svg#ic-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="details__item-media">
+                    <a class="details__link" href="">
+                      <svg class="details__icon-media">
+                        <use href="./images/sprite.svg#ic-discord"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="details__circles">
+                  <div class="details__large-ellipse">
+                    <div class="details__ellipse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="contacts__form form">
+              <div class="form__field">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="John"
+                  required
+                /><label class="form__label" for="first-name">First Name</label>
+              </div>
+              <div class="form__field">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Doe"
+                  required
+                /><label class="form__label" for="last-name">Last Name</label>
+              </div>
+              <div class="form__field">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@email.com"
+                  required
+                /><label class="form__label" for="email">Email</label>
+              </div>
+              <div class="form__field">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="+44 (78) 594 034 92"
+                  required
+                /><label class="form__label" for="phone-number"
+                  >Phone Number</label
+                >
+              </div>
+
+              <div class="subject-selection">
+                <p class="subject-selection__title">Select Subject?</p>
+
+                <ul class="subject-selection__flex-wrapper">
+                  <li class="subject-selection__field">
+                    <label class="subject-selection__label" for="subject-1"
+                      >General Inquiry</label
+                    ><input
+                      class="subject-selection__input visually-hidden"
+                      type="radio"
+                      id="subject-1"
+                      name="subject"
+                      checked
+                    /><span class="subject-selection__checkmark"
+                      ><svg class="subject-selection__icon">
+                        <use href="./images/sprite.svg#ic-checkmark"></use>
+                      </svg>
+                    </span>
+                  </li>
+
+                  <li class="subject-selection__field">
+                    <label class="subject-selection__label" for="subject-2"
+                      >General Inquiry</label
+                    ><input
+                      class="subject-selection__input visually-hidden"
+                      type="radio"
+                      id="subject-2"
+                      name="subject"
+                    />
+                    <span class="subject-selection__checkmark"
+                      ><svg class="subject-selection__icon">
+                        <use href="./images/sprite.svg#ic-checkmark"></use>
+                      </svg>
+                    </span>
+                  </li>
+
+                  <li class="subject-selection__field">
+                    <label class="subject-selection__label" for="subject-3"
+                      >General Inquiry</label
+                    ><input
+                      class="subject-selection__input visually-hidden"
+                      type="radio"
+                      id="subject-3"
+                      name="subject"
+                    /><span class="subject-selection__checkmark"
+                      ><svg class="subject-selection__icon">
+                        <use href="./images/sprite.svg#ic-checkmark"></use>
+                      </svg>
+                    </span>
+                  </li>
+
+                  <li class="subject-selection__field">
+                    <label class="subject-selection__label" for="subject-4"
+                      >General Inquiry</label
+                    ><input
+                      class="subject-selection__input visually-hidden"
+                      type="radio"
+                      id="subject-4"
+                      name="subject"
+                    /><span class="subject-selection__checkmark"
+                      ><svg class="subject-selection__icon">
+                        <use href="./images/sprite.svg#ic-checkmark"></use>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="form__message-field">
+                <textarea
+                  class="form__comment-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Write your message.."
+                  rows="1"
+                ></textarea>
+                <label class="form__comment-title" for="comment">Message</label>
+              </div>
+
+              <button class="form__button" type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <img
+            aria-hidden="true"
+            class="contacts__send-img"
+            src="./images/letter-send-1.png"
+            alt="Pointer to the form submit button"
+          />
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo footer__logo footer__logo--white" href="./index.html"
+          >Logo Here</a
+        >
+
+        <div class="footer__thumb">
+          <div class="footer__wrapper">
+            <div class="footer__reach-us reach-us">
+              <h2 class="reach-us__title">Reach us</h2>
+
+              <address class="reach-us__list">
+                <a class="reach-us__link" href="callto:+10123456789"
+                  ><svg class="reach-us__icon">
+                    <use href="./images/sprite.svg#ic-phone" x="-3"></use>
+                  </svg>
+                  +1012 3456 789</a
+                >
+
+                <a class="reach-us__link" href="mailto:demo@gmail.com">
+                  <svg class="reach-us__icon">
+                    <use href="./images/sprite.svg#ic-email" x="-2"></use>
+                  </svg>
+                  demo@gmail.com</a
+                >
+
+                <a
+                  class="reach-us__link"
+                  href="https://www.google.com.ua/maps/place/132+Dartmouth+St,+Boston,+MA+02116,+%D0%A1%D0%A8%D0%90/@42.3467614,-71.0767619,19z/data=!3m1!4b1!4m6!3m5!1s0x89e37a0d715622b3:0x5b2af19970952585!8m2!3d42.3467604!4d-71.0761182!16s%2Fg%2F11c1zptc6r?hl=ru&entry=ttu"
+                  target="_blank"
+                  ><svg class="reach-us__icon">
+                    <use href="./images/sprite.svg#ic-location" x="-3"></use>
+                  </svg>
+                  132 Dartmouth Street Boston, Massachusetts 02156 United States
+                </a>
+              </address>
+            </div>
+            <div class="company">
+              <h2 class="company__title">Company</h2>
+              <ul class="company__list">
+                <li class="company__item">
+                  <a class="company__link" href="">About</a>
+                </li>
+                <li class="company__item">
+                  <a class="company__link" href="">Contact</a>
+                </li>
+                <li class="company__item">
+                  <a class="company__link" href="">Blogs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__wrapper">
+            <div class="footer__legal legal">
+              <h2 class="legal__title">Legal</h2>
+              <ul class="legal__list">
+                <li class="legal__item">
+                  <a href="" class="legal__link">Privacy Policy</a>
+                </li>
+                <li class="legal__item">
+                  <a href="" class="legal__link">Terms & Services</a>
+                </li>
+                <li class="legal__item">
+                  <a href="" class="legal__link">Terms of Use</a>
+                </li>
+                <li class="legal__item">
+                  <a href="" class="legal__link">Refund Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="additional-res">
+              <h2 class="additional-res__title">Quick Links</h2>
+              <ul class="additional-res__list">
+                <li class="additional-res__item">
+                  <a class="additional-res__link" href="">Techlabz Keybox</a>
+                </li>
+                <li class="additional-res__item">
+                  <a class="additional-res__link" href="">Downloads</a>
+                </li>
+                <li class="additional-res__item">
+                  <a class="additional-res__link" href="">Forum</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__subscription subscription">
+            <h2 class="subscription__title">Join Our Newsletter</h2>
+            <form class="subscription__form">
+              <input
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                placeholder="Your email address"
+                class="subscription__input"
+              />
+              <button class="subscription__button">Subscribe</button>
+            </form>
+            <p class="subscription__remark">
+              * Will send you weekly updates for your better tool management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+  </body>
+</html>

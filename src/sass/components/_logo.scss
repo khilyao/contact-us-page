@@ -1,0 +1,24 @@
+.logo {
+  display: block;
+
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 1.22;
+
+  color: $blk-clr;
+
+  transition: color 250ms $cubic-bezier;
+
+  body.menu-open & {
+    z-index: 10;
+
+    color: $wht-clr;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+  }
+}

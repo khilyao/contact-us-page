@@ -1,0 +1,270 @@
+.header {
+  background-color: #fbfbfb;
+
+  border-bottom: 1px solid hsla(0, 10%, 76%, 0.25);
+
+  @media screen and (min-width: 1280px) {
+    border: 0;
+  }
+}
+
+.header__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu-button {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+
+  background-color: transparent;
+
+  border: 0;
+
+  body.menu-open & {
+    z-index: 10;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu-button__icon-menu,
+.menu-button__icon-close {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-button__icon-menu {
+  .menu-button.is-active & {
+    display: none;
+  }
+}
+
+.menu-button__icon-close {
+  display: none;
+
+  .menu-button.is-active & {
+    display: block;
+  }
+}
+
+.navigation__menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  background-color: $blk-clr;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 250ms $cubic-bezier, opacity 250ms $cubic-bezier;
+
+  body.menu-open & {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: static;
+
+    margin-left: auto;
+
+    background-color: transparent;
+
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.navigation-menu__wrapper {
+  padding-top: 110px;
+  padding-left: 23px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+
+    padding: 0;
+  }
+}
+
+.navigation__list {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+
+    margin-right: 60px;
+  }
+}
+
+.navigation__item {
+  @media screen and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+}
+
+.navigation__link {
+  font-size: 14px;
+  font-family: "Roboto", serif;
+  line-height: 1.14;
+
+  color: $wht-clr;
+
+  transition: transform 200ms $cubic-bezier;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: $secondary-blk-clr;
+  }
+
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    transform: scale3d(1.05);
+  }
+
+  &--visited {
+    font-weight: 700;
+  }
+}
+
+.navigation__features-button {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-family: "Roboto", serif;
+  line-height: 1.14;
+
+  background-color: transparent;
+  color: $wht-clr;
+
+  border: 0;
+
+  transition: transform 200ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    transform: scale3d(1.05);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: $secondary-blk-clr;
+  }
+}
+
+.navigation__features-icon {
+  margin-left: 3px;
+
+  width: 13px;
+  height: 13px;
+
+  fill: $wht-clr;
+
+  @media screen and (min-width: 1280px) {
+    fill: $secondary-blk-clr;
+  }
+}
+
+.navigation__user-env {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1280px) {
+    position: static;
+
+    transform: translate(0);
+  }
+}
+
+.navigation__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 31px;
+  height: 31px;
+
+  background-color: transparent;
+
+  border: 1px solid rgba($color: $wht-clr, $alpha: 0.75);
+  border-radius: 50%;
+
+  transition: transform 200ms $cubic-bezier;
+
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    border: 1px solid #3f3f3f;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+
+.navigation__icon {
+  width: 18px;
+  height: 18px;
+  fill: $wht-clr;
+
+  transform: scale(1.1);
+  transition: transform 200ms $cubic-bezier;
+
+  @media screen and (min-width: 1280px) {
+    fill: $blk-clr;
+
+    .navigation__button:hover &,
+    .navigation__button:focus & {
+      transform: scale(1.12);
+    }
+
+    .navigation__button:active & {
+      transform: scale(1);
+    }
+  }
+}
